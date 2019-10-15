@@ -54,7 +54,7 @@ p.lead {
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: $gray-700;
+    background-color: $secondary;
     color: $white !important;
     border-radius: 100%;
     text-align: center;
@@ -77,4 +77,8 @@ p.lead {
       color: $primary;
     }
   }
+}
+
+.fa-trophy, .fa-award {
+  color: $secondary;
 }
