@@ -29,10 +29,11 @@
         "url": "https://github.com/BlackrockDigital/startbootstrap-resume.git"
     },
     "dependencies": {
-        "@fortawesome/fontawesome-free": "5.10.2",
+        "@fortawesome/fontawesome-free": "5.11.2",
         "bootstrap": "4.3.1",
         "jquery": "3.4.1",
-        "jquery.easing": "^1.4.1"
+        "jquery.easing": "^1.4.1",
+        "popper.js": "^1.15.0"
     },
     "devDependencies": {
         "browser-sync": "2.26.7",
