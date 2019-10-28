@@ -1,9 +1,8 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "global.scss";
-@import "nav.scss";
 @import "resume-item.scss";
-@import "bootstrap-overrides.scss";
+@import '../node_modules/tippy.js/themes/material.css';
 
 html {
   -ms-text-size-adjust: 100%;
@@ -197,13 +196,13 @@ a:hover {
   text-decoration: none
 }
 
-//h1,h2,h3,h4,h5,h6 {
-//  color: #1d1d1d;
-//  font-family: "Crimson Text",serif;
-//  font-weight: 600;
-//  line-height: 1.2;
-//  text-rendering: optimizeLegibility
-//}
+h1,h2,h3,h4,h5,h6 {
+  color: #1d1d1d;
+  font-family: "Crimson Text",serif;
+  font-weight: 600;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility
+}
 
 h1 {
   font-size: 2.66667rem;

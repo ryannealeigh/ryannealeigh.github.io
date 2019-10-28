@@ -17,6 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5/dist/tippy-bundle.iife.js"></script>
+    <script defer src="/js/tippys.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
@@ -25,13 +28,13 @@
 
 <body id="page-top">
 
-<header id="masthead" class="site-header">
+<nav class="site-header fixed-top">
     <div class="site-header-wrap">
         <div class="site-header-inside">
             <div class="site-branding">
                 <p class="profile">
                     <a href="/">
-                        <img src="img/profile.jpg" alt="'s Picture" class="avatar"/>
+                        <img src="img/profile.jpg" class="avatar"/>
                     </a>
                 </p>
 
@@ -51,13 +54,17 @@
                 <div class="site-nav-wrap">
                     <div class="site-nav-inside">
                         <ul class="menu">
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                            <li class="menu-item nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger" href="#about">About</a></li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger"
+                                                              href="#experience">Experience</a></li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger" href="#education">Education</a>
+                            </li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger" href="#skills">Skills</a></li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger" href="#projects">Projects</a>
+                            </li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger" href="#interests">Interests</a>
+                            </li>
+                            <li class="menu-item nav-item"><a class="js-scroll-trigger" href="#awards">Awards</a></li>
                         </ul>
                         <p class="social-links">
                             <a href="https://twitter.com/ryannealeigh" target="_blank">
@@ -93,7 +100,7 @@
             </nav><!-- .site-navigation -->
         </div><!-- .site-header-inside -->
     </div><!-- .site-header-wrap -->
-</header><!-- .site-header -->
+</nav><!-- .site-header -->
 
 <div class="container-fluid p-0">
 
@@ -113,11 +120,11 @@
                 <div class="resume-content">
                     <h3 class="mb-0">Associate Software Engineer</h3>
                     <div class="subheading mb-3">Liferay Inc.</div>
-                    <p>Currently working on Liferay DXP Cloud with a focus on the Node.js backend API. I also help with
+                    <p>Currently working on Liferay DXP Cloud with a focus on the Node.js API. I also help with
                         the support escalation process.</p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">January 2019 - Present</span>
+                    <span>January 2019 - Present</span>
                 </div>
             </div>
 
@@ -128,7 +135,7 @@
                     <p>Built key portlets in Java for an internal system.</p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">May 2018 - August 2018</span>
+                    <span>May 2018 - August 2018</span>
                 </div>
             </div>
 
@@ -139,7 +146,7 @@
                     <p>Worked on a prototype app to enable automated robotic inspection of non-lethal grenades.</p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">January 2018 - May 2018</span>
+                    <span>January 2018 - May 2018</span>
                 </div>
             </div>
 
@@ -150,7 +157,7 @@
                     <p>Managed all Information Technology needs for a construction business.</p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">April 2016 - December 2017</span>
+                    <span>April 2016 - December 2017</span>
                 </div>
             </div>
 
@@ -162,12 +169,10 @@
                         exercises and missions for Air Force Global Strike Command.</p>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">February 2012 - March 2016</span>
+                    <span>February 2012 - March 2016</span>
                 </div>
             </div>
-
         </div>
-
     </section>
 
     <hr class="m-0">
@@ -194,7 +199,7 @@
                     <div>Computer Science</div>
                 </div>
                 <div class="resume-date text-md-right">
-                    <span class="text-primary">August 2016 - December 2018</span>
+                    <span>August 2016 - December 2018</span>
                 </div>
             </div>
 
@@ -204,8 +209,8 @@
                     <div class="subheading mb-3">Associate of Applied Science</div>
                     <div>Electronic Systems Technology</div>
                 </div>
-                <div class="resume-date text-md-right">
-                    <span class="text-primary">February 2012 - April 2014</span>
+                <div>
+                    <span>February 2012 - April 2014</span>
                 </div>
             </div>
 
@@ -220,16 +225,16 @@
 
             <div class="subheading mb-3">Programming Languages &amp; Tools</div>
             <ul class="list-inline dev-icons">
-                <li class="list-inline-item">
+                <li class="list-inline-item" id="htmlIcon">
                     <i class="fab fa-html5"></i>
                 </li>
-                <li class="list-inline-item">
+                <li class="list-inline-item" id="cssIcon">
                     <i class="fab fa-css3-alt"></i>
                 </li>
-                <li class="list-inline-item">
+                <li class="list-inline-item" id="jsIcon">
                     <i class="fab fa-js-square"></i>
                 </li>
-<!--                <li class="list-inline-item">-->
+<!--                <li class="list-inline-item" id="angularIcon">-->
 <!--                    <i class="fab fa-angular"></i>-->
 <!--                </li>-->
 <!--                <li class="list-inline-item">-->
@@ -256,25 +261,23 @@
                 <li class="list-inline-item">
                     <i class="fab fa-npm"></i>
                 </li>
-            </ul>
-
-            <div class="subheading mb-3">Workflow</div>
-            <ul class="fa-ul mb-0">
-                <li>
-                    <i class="fa-li fa fa-check"></i>
-                    Mobile-First, Responsive Design
+                <li class="list-inline-item">
+                    <i class="fab fa-java"></i>
                 </li>
-                <li>
-                    <i class="fa-li fa fa-check"></i>
-                    Cross Browser Testing &amp; Debugging
+                <li class="list-inline-item">
+                    <i class="fab fa-python"></i>
                 </li>
-                <li>
-                    <i class="fa-li fa fa-check"></i>
-                    Cross Functional Teams
+                <li class="list-inline-item">
+                    <i class="fab fa-npm"></i>
                 </li>
-                <li>
-                    <i class="fa-li fa fa-check"></i>
-                    Agile Development &amp; Scrum
+                <li class="list-inline-item">
+                    <i class="fab fa-npm"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fab fa-npm"></i>
+                </li>
+                <li class="list-inline-item">
+                    <i class="fab fa-npm"></i>
                 </li>
             </ul>
         </div>
