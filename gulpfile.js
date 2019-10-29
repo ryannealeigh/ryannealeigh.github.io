@@ -67,7 +67,13 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
+  // Tippy
+  var tippy = gulp.src('./node_modules/tippy.js/dist/**/*')
+      .pipe(gulp.dest('./vendor/tippy.js'));
+  // Popper
+  var popper = gulp.src('./node_modules/popper.js/dist/umd/**/*')
+      .pipe(gulp.dest('./vendor/popper.js'));
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, tippy, popper);
 }
 
 // CSS task
